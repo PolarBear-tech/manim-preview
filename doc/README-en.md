@@ -1,7 +1,7 @@
 # ManimPreview
 
 > [!NOTE]
-> If you need documentation in Chinese, see `README.md`
+> 中文版，请移步[README-cn](./doc/README-cn.md)
 
 An automated tool to preview Manim animations via a web browser.
 
