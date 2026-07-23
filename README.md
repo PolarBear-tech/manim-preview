@@ -31,7 +31,7 @@ Each time you save changes to the source file, automatic rendering will trigger,
 Browsers supporting picture-in-picture mode (such as Microsoft Edge) are highly recommended. This avoids frequent tab switching while developing animations.
 
 Example workflow:
-![example](assets/use_with_edge.png)
+![example](doc/assets/use_with_edge.png)
 
 > [!WARNING]
 > I am fully aware of my limitations as a developer. This tool remains fragile. Many edge cases, type checks and parameter validation have not been implemented.

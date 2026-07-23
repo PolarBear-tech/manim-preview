@@ -1,8 +1,5 @@
 # ManimPreview
 
-> [!NOTE]
-> If you need an English doc, please move to `doc/README-en.md`
-
 这是一个的通过网页预览manim动画的自动化工具。
 
 这种工具并不是没人写，只是我尝试过的工具都不太好用，要么是与VSCode绑定太深（额。。。本人使用nvim），要么是缺少配置教程。

@@ -1,8 +1,5 @@
 # ManimPreview
 
-> [!NOTE]
-> 中文版，请移步[README-cn](./doc/README-cn.md)
-
 An automated tool to preview Manim animations via a web browser.
 
 Tools with similar goals already exist, but those I have tried come with noticeable drawbacks. Some are tightly coupled with VSCode (while I use Neovim), and many lack comprehensive configuration documentation.
