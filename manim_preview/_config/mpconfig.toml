@@ -1,0 +1,31 @@
+[log]
+# 用于控制server打印前端的等级
+# 五个等级 critical > error > warning > info > debug > trace
+# 等级越低，信息越多
+web_level = "warning"
+# 控制台打印的等级
+# 五个等级 CRITICAL > ERROR > WARNING > INFO > DEBUG > TRACE
+# 注意这个是大写
+console_level = "INFO"
+# 控制台打印的格式
+# 颜色的设置参见loguru的官方文档
+console_formatter = "<level>{level}</level>: <level>{message}</level>"
+# 文件输出的等级
+# 等级和console_level一致
+file_level = "WARNING"
+# log文件的路径和格式
+# 参见loguru的官方文档
+file_sink = "logs/{time:YYYY-MM-DD}.log"
+
+[manim]
+# 调用manim命令渲染时的质量参数
+# 包括-qk > -qp > -qh > -qm > -ql，
+# 越向右质量越高，渲染所需等的时间也越多
+quality = "-ql"
+# 从检测到文件变更到开始渲染的等待时间
+# 用于去除短时间内的重复编译
+render_interval = 0.5
+
+[http]
+# 开启浏览器页面和后端服务的端口，如有冲突，可更换
+port = 8000

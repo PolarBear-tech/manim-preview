@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "manim-preview"
+version = "0.1.0"
+description = "a manim animation preview tool"
+authors = [{ name = "PolarBear-tech", email = "lijinzhao356@163.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi>=0.139.2",
+  "hatchling>=1.31.0",
+  "loguru>=0.7.3",
+  "uvicorn>=0.51.0",
+  "watchdog>=6.0.0",
+]
+
+
+[tool.hatch.build]
+packages = ["manim_preview"]
+
+[project.scripts]
+manim-preview = "manim_preview.__main__:main"
+
+
+[tool.hatch.build.targets.wheel]
+include = ["manim_preview/static/**", "manim_preview/_config/mpconfig.toml"]
+
+
+[tool.hatch.build.targets.sdist]
+include = ["manim_preview/static/**", "manim_preview/_config/mpconfig.toml"]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[tool.pyright]
+reportExplicitAny = false
+reportUnusedCallResult = false
+reportAny = false
