@@ -8,9 +8,10 @@
 
 ## 使用方法
 
-### ManimPreview的下载
+### 下载
 
-建议使用uv
+- uv : `uv add manim-preview`
+- pip : `pip install manim-preview`
 
 ### 命令的使用
 

@@ -8,6 +8,13 @@ After struggling with existing solutions, I decided to build my own tool, and Ma
 
 ## Usage
 
+### Installation
+
+- uv : `uv add manim-preview`
+- pip : `pip install manim-preview`
+
+### CLI Usage
+
 This tool provides the `manim-preview` CLI command. Run the following in your terminal:
 
 ```bash
